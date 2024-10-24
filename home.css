@@ -145,7 +145,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-between; 
-    min-height: 400px; 
+    min-height: 400px;
   }
   
   .feature-icon1 {
@@ -158,9 +158,11 @@ body {
   .feature-icon2 {
     width: 180px;
     height: 150px;
+    display:block;
     align-self:center;
     margin-bottom: 10px;
-    background-color: white; 
+    background-color: white;
+    margin-left: 25px;
   }
   .feature-icon3 {
     width: 180px;
@@ -213,7 +215,7 @@ color: white;
 margin: 0;
 }
   
-  @media (max-width: 390px) {
+  @media (max-width: 360px) {
     .navbar {
       flex-direction: column;
       padding: 10px;
