@@ -1,0 +1,508 @@
+/* Styling dasar untuk seluruh body */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  /* background-image: url('inggris.png'); */
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  min-height: 100vh;
+  overflow-y: auto;
+}
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #1c80a1;
+  padding: 10px 20px;
+}
+
+.navbar .logo {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  font-family: "Kablammo", system-ui;
+}
+
+.navbar svg {
+  margin-right: 0px;
+}
+
+.navbar .logo span {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.navbar ul {
+  display: flex;
+  justify-content: center; /* Mengatur posisi menu task di tengah */
+  flex-grow: 1;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar ul li {
+  margin: 0 20px; /* Spasi antara item menu */
+}
+
+.navbar ul li a {
+  color: white;
+  text-decoration: none;
+  /* font-size: 1.2em; */
+  font-size: 18px;
+}
+
+.navbar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Main Content Sections */
+.main-content {
+  display: flex;
+  flex: 1;
+  justify-content: space-around;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 50px;
+  background-image: url('inggris.png');
+  background-color: #28adb4;
+}
+.feature-item {
+  max-width: 300px;
+  width: 300%;
+  padding: 10px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; /* Distribusi elemen di dalam secara merata */
+  min-height: 400px; 
+}
+
+.feature-icon1 {
+  width: 180px;
+  height: 180px;
+  align-self: center;
+  margin-bottom: 2px;
+  background-color: white; /* Menambahkan latar belakang putih */
+}
+.feature-icon2 {
+  width: 180px;
+  height: 150px;
+  align-self:center;
+  margin-bottom: 10px;
+  background-color: white; /* Menambahkan latar belakang putih */
+}
+.feature-icon3 {
+  width: 180px;
+  height: 130px;
+  align-self: center;
+  margin-bottom: 10px;
+  background-color: white; /* Menambahkan latar belakang putih */
+}
+
+.main-content section {
+  width: 80%; /* Mengatur lebar setiap section */
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.main-content h2 {
+  font-size: 2em;
+  color: #333;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.main-content p {
+  font-size: 1.2em;
+  color: rgb(45, 18, 18);
+  line-height: 1.6;
+  text-align: justify;
+}
+
+
+/* FOOTER */
+
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  text-align: center;
+  margin-top: auto;
+}
+
+footer p {
+  font-size: 1.2em;
+  color: white;
+  margin: 0;
+}
+
+/* background */
+
+
+.content {
+  position: relative;
+  z-index: 2;
+  text-align: center;
+  color: white;
+}
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Warna transparan untuk efek */
+}
+.feature-buttons {
+  display: flex;
+  justify-content: space-around;
+}
+
+.feature-buttons button {
+  padding: 15px 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.feature-buttons button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling untuk Reading Section */
+.reading-section {
+  width: 60%;
+  background-color: white;
+  padding: 30px;
+  margin: 30px auto;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.reading-section h2 {
+  font-size: 24px;
+  color: #333;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.reading-text {
+  background-color: #f9f9f9;
+  border-left: 4px solid #007bff;
+  padding: 15px;
+  margin-bottom: 20px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #555;
+}
+
+.reading-section form p {
+  font-size: 16px;
+  color: #333;
+  margin: 15px 0 5px;
+}
+
+.reading-section input[type="text"] {
+  width: calc(100% - 20px);
+  padding: 10px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.reading-section button#submit-button {
+  padding: 10px 20px;
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  margin-top: 10px;
+}
+
+.reading-section button#submit-button:hover {
+  background-color: #218838;
+}
+
+.reading-section #reading-feedback {
+  margin-top: 20px;
+  font-weight: bold;
+  color: #333;
+}
+
+/* Styling untuk Grammar Section */
+.quiz-section {
+  width: 100%;
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 40px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.quiz-container {
+  max-width: 800px;
+  margin: 40px auto;
+  width: 100%;
+}
+h1{
+  text-align: center;
+  font-size: xx-large;
+}
+
+/* Question Styling */
+.quiz-container h2 {
+  font-size: 28px;
+  text-align: center;
+  color: #000;
+  font-family: sans-serif;
+  margin-bottom: 40px;
+}
+
+/* Options Styling */
+.options {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin: 30px 0;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.option:hover {
+  background-color: #f8f8f8;
+}
+
+/* Radio Button Styling */
+.option input[type="radio"] {
+  margin-right: 15px;
+  width: 20px;
+  height: 20px;
+}
+
+/* Submit Button Styling */
+button {
+  width: 100%;
+  padding: 20px;
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  margin-bottom: 10px;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #7d3c98;
+}
+
+/* Results Styling */
+.results {
+  text-align: center;
+  padding: 20px;
+}
+
+.results h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Play Again Button */
+.play-again {
+  width: 100%;
+  padding: 20px;
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+
+
+/* Styling untuk Vocab Section */
+
+:root {
+  --box-width: 170px;
+  --box-height: 80px; 
+}
+.title{
+  margin-bottom: 5rem;
+}
+.vocab-section {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.vocab-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto;
+}
+
+#upper-container,
+#lower-container {
+  width: 100%;
+  max-width: 1500px;
+  margin: 0 auto 30px;
+}
+
+.words,
+.definitions {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+  margin: 20px 0;
+  width: 100%;
+}
+
+.definition-item {
+  width: 170px;
+  margin: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.drop-box {
+  width: 170px;
+  height: 80px;
+  background-color: #f0f0f0;
+  border: 2px dashed #7d3c98;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.words p {
+  width: 170px;
+  height: 80px;
+  margin: 0;
+  background-color: #7d3c98;
+  color: white;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: grab;
+  font-size: 1.2em;
+}
+
+.definition-text {
+  font-size: 0.9em;
+  color: #555;
+  text-align: center;
+  margin-top: 5px;
+}
+
+#btn {
+  width: auto;
+  min-width: 200px;
+  padding: 15px 30px;
+  margin-top: 20px;
+  background-color: #8e44ad;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1em;
+  display: flex;
+  align-items: center;
+  left: 10000px;
+}
+
+#btn:hover {
+  background-color: #7d3c98;
+}
+
+.back-btn{
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.back-btn svg {
+  stroke: black; /* Mengubah warna garis SVG menjadi ungu */
+}
+
+.back-btn span {
+  color: black; /* Mengubah warna teks menjadi ungu */
+  margin-left: 8px; /* Memberikan jarak antara ikon dan teks */
+}
+
+.back-btn:hover {
+  text-decoration: underline;
+}
+.test-body{
+  background-image: url('inggris.png');
+  margin: 0;
+  padding: 0;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 768px) {
+  .vocab-section {
+      padding: 15px;
+  }
+  
+  #upper-container,
+  #lower-container {
+      max-width: 100%;
+  }
+  
+  .words,
+  .definitions {
+      gap: 10px;
+  }
+  
+  .definition-item {
+      width: 140px;
+  }
+  
+  .drop-box,
+  .words p {
+      width: 140px;
+      height: 70px;
+  }
+}
