@@ -87,9 +87,9 @@
     font-size: 1.2em;
 }
 .words p:hover {
-    background-color: #9b59b6; /* Warna background berubah saat hover */
-    transform: scale(1.05); /* Sedikit memperbesar elemen */
-    cursor: pointer; /* Mengubah cursor menjadi pointer untuk efek interaktif */
+    background-color: #9b59b6; 
+    transform: scale(1.05); 
+    cursor: pointer; 
 }
   
 .definition-text {
@@ -106,12 +106,12 @@
 }
   
 .back-btn svg {
-    stroke: black; /* Mengubah warna garis SVG menjadi ungu */
+    stroke: black; 
 }
   
 .back-btn span {
-    color: black; /* Mengubah warna teks menjadi ungu */
-    margin-left: 8px; /* Memberikan jarak antara ikon dan teks */
+    color: black; 
+    margin-left: 8px; 
 }
   
 .back-btn:hover {

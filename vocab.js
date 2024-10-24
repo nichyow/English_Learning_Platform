@@ -26,7 +26,6 @@ let score = 0;
 
 const vocabContainer = document.getElementById('vocab-container');
 
-// Function to shuffle an array
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
         const j = Math.floor(Math.random() * (i + 1));
@@ -34,12 +33,11 @@ function shuffleArray(array) {
     }
 }
 
-// Function to render 10 random vocab words and definitions at once
 function renderVocab() {
-    score = 0; // Reset score when the game is restarted
-    selectedVocab = [...vocabData]; // Clone the vocabData array
-    shuffleArray(selectedVocab); // Shuffle the array
-    selectedVocab = selectedVocab.slice(0, 10); // Select the first 10 items from the shuffled array
+    score = 0; 
+    selectedVocab = [...vocabData]; 
+    shuffleArray(selectedVocab); 
+    selectedVocab = selectedVocab.slice(0, 10); 
 
     let upperHtml = `<div class="words">`;
     let upperDefsHtml = `<div class="definitions">`;
@@ -47,7 +45,6 @@ function renderVocab() {
     let lowerHtml = `<div class="words">`;
     let lowerDefsHtml = `<div class="definitions">`;
 
-    // Render first 5 words and definitions in the upper container
     selectedVocab.slice(0, 5).forEach(vocab => {
         upperHtml += `
             <p draggable="true" ondragstart="drag(event)" id="${vocab.wordId}">${vocab.word}</p>
@@ -60,7 +57,6 @@ function renderVocab() {
         `;
     });
 
-    // Render the remaining 5 words and definitions in the lower container
     selectedVocab.slice(5).forEach(vocab => {
         lowerHtml += `
             <p draggable="true" ondragstart="drag(event)" id="${vocab.wordId}">${vocab.word}</p>
@@ -79,7 +75,6 @@ function renderVocab() {
     lowerHtml += `</div>`;
     lowerDefsHtml += `</div>`;
     
-    // Insert HTML into upper and lower containers
     vocabContainer.innerHTML = `
         <div id="upper-container">
             ${upperHtml}
@@ -110,14 +105,11 @@ function drop(event) {
         return;
     }
 
-    // Check if the answer is correct
     const vocab = selectedVocab.find(v => v.wordId === data);
     if (vocab && dropTarget.id === vocab.defId) {
         dropTarget.appendChild(draggedElement);
         dropTarget.style.backgroundColor = "lightgreen";
         score++;
-        
-        // Check if game is complete
         if (score === selectedVocab.length) {
             setTimeout(renderResults, 500);
         }
@@ -145,11 +137,11 @@ function renderResults() {
 function restartGame() {
     score = 0;
     renderVocab();
-    document.querySelector('h1').style.display = ''; // Restart the game
+    document.querySelector('h1').style.display = ''; 
 }
 
-// Initialize game
 renderVocab();
+
 function goBackToMenu() {
     window.location.href = 'index.html'; 
 }

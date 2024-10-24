@@ -14,14 +14,14 @@ document.getElementById('back-button').addEventListener('click', function() {
     window.location.href = 'index.html';
 });
 function goToVocab() {
-    window.location.href = 'vocab.html'; // Redirect to the main menu page
+    window.location.href = 'vocab.html'; 
 }
 function goToGrammar() {
-    window.location.href = 'grammar.html'; // Redirect to the main menu page
+    window.location.href = 'grammar.html'; 
 }
 function goToReading() {
-    window.location.href = 'reading.html'; // Redirect to the main menu page
+    window.location.href = 'reading.html'; 
 }
 function goBackToMenu() {
-    window.location.href = 'index.html'; // Redirect to the main menu page
+    window.location.href = 'index.html';
 }

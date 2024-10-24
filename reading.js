@@ -17,7 +17,6 @@ const ieltsReadingData = {
     ]
 };
 
-// Fungsi untuk menampilkan soal
 function renderReading() {
     const passageElement = document.querySelector('.reading-text p');
     passageElement.textContent = ieltsReadingData.passage;
@@ -37,7 +36,6 @@ function renderReading() {
     document.getElementById('submit-button').addEventListener('click', checkIELTSReading);
 }
 
-// Fungsi untuk mengecek jawaban IELTS
 function checkIELTSReading() {
     let correctAnswers = 0;
     const feedback = document.getElementById('reading-feedback');
@@ -51,27 +49,23 @@ function checkIELTSReading() {
     });
 
     if (correctAnswers === totalQuestions) {
-        renderResults(correctAnswers);  // Panggil fungsi renderResults jika semua jawaban benar
+        renderResults(correctAnswers);  
     } else {
-        // Jika masih ada yang salah, tampilkan pesan feedback
         feedback.textContent = `You answered ${correctAnswers}/${totalQuestions} questions correctly. Please review your answers and try again.`;
-        feedback.style.color = 'red'; // Opsional: memberikan warna merah pada feedback jika ada jawaban salah
+        feedback.style.color = 'red';
     }
-    // feedback.textContent = `You answered ${correctAnswers}/${ieltsReadingData.questions.length} questions correctly.`;
 }
 
-// Fungsi untuk menampilkan hasil
+
 function renderResults(correctAnswers) {
     const feedback = document.getElementById('reading-feedback');
     const formSection = document.getElementById('reading-form');
     const passageSection = document.querySelector('.reading-text');
 
-    // Sembunyikan passage dan form setelah hasil ditampilkan
     formSection.style.display = 'none';
     passageSection.style.display = 'none';
 
     feedback.style.color = 'black';
-    // Tampilkan hasil
     feedback.innerHTML = `
         <h3>Quiz Complete!</h3>
         <p>You answered ${correctAnswers}/${ieltsReadingData.questions.length} questions correctly.</p>
@@ -79,22 +73,22 @@ function renderResults(correctAnswers) {
     `;
 }
 
-// Fungsi untuk restart quiz
+
 function restartReading() {
     const feedback = document.getElementById('reading-feedback');
     const formSection = document.getElementById('reading-form');
     const passageSection = document.querySelector('.reading-text');
 
-    // Bersihkan feedback dan tampilkan kembali form dan passage
+    
     feedback.innerHTML = '';
     formSection.style.display = 'block';
     passageSection.style.display = 'block';
 
-    renderReading(); // Panggil ulang fungsi renderReading untuk memulai kuis dari awal
+    renderReading(); 
 }
-// Panggil fungsi render untuk menampilkan soal
+
 renderReading();
 
 function goBackToMenu() {
-    window.location.href = 'index.html'; // Redirect to the main menu page
+    window.location.href = 'index.html'; 
 }
