@@ -151,5 +151,5 @@ function restartGame() {
 // Initialize game
 renderVocab();
 function goBackToMenu() {
-    window.location.href = 'index.html'; // Redirect to the main menu page
+    window.location.href = 'index.html'; 
 }

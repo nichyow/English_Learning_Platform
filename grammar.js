@@ -165,5 +165,6 @@ function goBackToMenu() {
     window.location.href = 'index.html'; // Redirect to the main menu page
 }
 
+
 // Initialize first question
 renderQuestion(0);
