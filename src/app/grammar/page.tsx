@@ -23,80 +23,79 @@ const quizData: QuizQuestion[] = [
     options: ["in", "at", "on"],
     correctAnswer: 1,
   },
-  // {
-  //   question:
-  //     "Choose the correct word: The lecture _____ at 9:00 AM every Monday.",
-  //   options: ["begins", "begin", "beginning"],
-  //   correctAnswer: 0,
-  // },
-  // {
-  //   question: "Select the correct article: He is _____ engineer.",
-  //   options: ["the", "a", "an"],
-  //   correctAnswer: 2,
-  // },
-  // {
-  //   question:
-  //     "Complete the sentence: They have been _____ English for two years.",
-  //   options: ["learned", "learning", "learn"],
-  //   correctAnswer: 1,
-  // },
-  // {
-  //   question:
-  //     "Choose the correct verb form: By the time he arrived, the class _____.",
-  //   options: ["had started", "has started", "started"],
-  //   correctAnswer: 0,
-  // },
-  // {
-  //   question:
-  //     "Select the correct conjunction: I will stay here _____ you come back.",
-  //   options: ["until", "because", "before"],
-  //   correctAnswer: 0,
-  // },
-  // {
-  //   question: "Choose the correct tense: She _____ her homework when I called.",
-  //   options: ["does", "is doing", "was doing"],
-  //   correctAnswer: 2,
-  // },
-  // {
-  //   question: "Pick the correct pronoun: Everyone must bring _____ own lunch.",
-  //   options: ["their", "his", "her"],
-  //   correctAnswer: 0,
-  // },
-  // {
-  //   question: "Select the correct form: He wishes he _____ more time to study.",
-  //   options: ["has", "had", "have"],
-  //   correctAnswer: 1,
-  // },
-  // {
-  //   question:
-  //     "Choose the correct word: This is the most _____ subject I have ever studied.",
-  //   options: ["excited", "exciting", "excitement"],
-  //   correctAnswer: 1,
-  // },
-  // {
-  //   question:
-  //     "Pick the correct phrase: He _____ finished the project by next week.",
-  //   options: ["will have", "would have", "will"],
-  //   correctAnswer: 0,
-  // },
-  // {
-  //   question:
-  //     "Complete the sentence: If I _____ you, I would accept the offer.",
-  //   options: ["am", "was", "were"],
-  //   correctAnswer: 2,
-  // },
-  // {
-  //   question: "Pick the correct form: They have _____ for hours.",
-  //   options: ["wait", "waiting", "waited"],
-  //   correctAnswer: 2,
-  // },
-  // {
-  //   question:
-  //     "Choose the correct verb: The professor suggested that the student _____ more research.",
-  //   options: ["do", "does", "did"],
-  //   correctAnswer: 0,
-  // },
-  // ... rest of your quiz data
+  {
+    question:
+      "Choose the correct word: The lecture _____ at 9:00 AM every Monday.",
+    options: ["begins", "begin", "beginning"],
+    correctAnswer: 0,
+  },
+  {
+    question: "Select the correct article: He is _____ engineer.",
+    options: ["the", "a", "an"],
+    correctAnswer: 2,
+  },
+  {
+    question:
+      "Complete the sentence: They have been _____ English for two years.",
+    options: ["learned", "learning", "learn"],
+    correctAnswer: 1,
+  },
+  {
+    question:
+      "Choose the correct verb form: By the time he arrived, the class _____.",
+    options: ["had started", "has started", "started"],
+    correctAnswer: 0,
+  },
+  {
+    question:
+      "Select the correct conjunction: I will stay here _____ you come back.",
+    options: ["until", "because", "before"],
+    correctAnswer: 0,
+  },
+  {
+    question: "Choose the correct tense: She _____ her homework when I called.",
+    options: ["does", "is doing", "was doing"],
+    correctAnswer: 2,
+  },
+  {
+    question: "Pick the correct pronoun: Everyone must bring _____ own lunch.",
+    options: ["their", "his", "her"],
+    correctAnswer: 0,
+  },
+  {
+    question: "Select the correct form: He wishes he _____ more time to study.",
+    options: ["has", "had", "have"],
+    correctAnswer: 1,
+  },
+  {
+    question:
+      "Choose the correct word: This is the most _____ subject I have ever studied.",
+    options: ["excited", "exciting", "excitement"],
+    correctAnswer: 1,
+  },
+  {
+    question:
+      "Pick the correct phrase: He _____ finished the project by next week.",
+    options: ["will have", "would have", "will"],
+    correctAnswer: 0,
+  },
+  {
+    question:
+      "Complete the sentence: If I _____ you, I would accept the offer.",
+    options: ["am", "was", "were"],
+    correctAnswer: 2,
+  },
+  {
+    question: "Pick the correct form: They have _____ for hours.",
+    options: ["wait", "waiting", "waited"],
+    correctAnswer: 2,
+  },
+  {
+    question:
+      "Choose the correct verb: The professor suggested that the student _____ more research.",
+    options: ["do", "does", "did"],
+    correctAnswer: 0,
+  },
 ];
 
 const fadeInUp = {
