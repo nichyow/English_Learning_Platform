@@ -31,9 +31,9 @@ const Quiz = () => {
     { word: "Benevolent", definition: "Well-meaning and kindly" },
     {
       word: "Abates",
-      definition: "sTo reduce in amount, degree, or intensity",
+      definition: "To reduce in amount, degree, or intensity",
     },
-    { word: "Benevolents", definition: "sWell-meaning and kindly" },
+    { word: "Benevolents", definition: "Well-meaning and kindly" },
   ];
 
   const handleDragStart = (word: string): void => {

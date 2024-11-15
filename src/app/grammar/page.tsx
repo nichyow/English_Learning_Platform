@@ -96,6 +96,7 @@ const quizData: QuizQuestion[] = [
     options: ["do", "does", "did"],
     correctAnswer: 0,
   },
+  ... rest of your quiz data
 ];
 
 const fadeInUp = {
