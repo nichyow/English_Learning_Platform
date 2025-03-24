@@ -45,7 +45,7 @@ const SignInForm = () => {
 
     if (signInData?.error) {
     } else {
-      router.push("/profile");
+      router.push("/");
     }
   };
 
