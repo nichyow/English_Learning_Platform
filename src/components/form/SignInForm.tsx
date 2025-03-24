@@ -56,7 +56,7 @@ const SignInForm = () => {
         className="w-full max-w-md mx-auto bg-white p-8 rounded-xl shadow-lg"
       >
         <h2 className="text-2xl font-bold text-center mb-8 text-gray-800">
-          Welcome Back
+          Welcome Back !
         </h2>
 
         <div className="space-y-4">
